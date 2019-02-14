@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: consolas;
+    color: rgb(77, 235, 235);
+    background-color: #050505;
+    margin: 80px 200px 0px;
+}
+
+.page-header{
+    /* border: 1px solid pink; */
+}
+.header-links{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+/* margins of the middle list items */
+.header-links li{
+    margin-right: 10px;
+}
+/* push the rest of the siblings to the end */
+.header-links li:nth-child(-n+1){
+    margin-right: auto;
+}
+/* remove the margin of the last element */
+.header-links li:last-child{
+    margin-right: 0px;
+}
+.header-links li a{
+    color: rgb(77, 235, 235);
+    text-decoration: none;
+}
+.header-links li a:hover{
+    background-color: rgb(77, 235, 235);
+    color: #050505;
+}
