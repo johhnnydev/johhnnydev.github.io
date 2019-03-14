@@ -9,9 +9,9 @@ body{
     margin: 80px 200px 0px;
 }
 
-.page-header{
-    /* border: 1px solid pink; */
-}
+/* .page-header{
+    border: 1px solid pink;
+} */
 .header-links{
     margin: 0px;
     padding: 0px;
@@ -38,4 +38,27 @@ body{
 .header-links li a:hover{
     background-color: rgb(77, 235, 235);
     color: #050505;
+}
+.work-headers a{
+    text-decoration: none;
+    color: rgb(77, 235, 235);
+}
+.work-headers a:hover{
+    text-decoration: underline;
+}
+.sec-p{
+    color: rgb(58, 158, 158);
+    font-size: 14px;
+}
+.sec-header{
+    background-color: rgb(77, 235, 235);
+    color: #050505;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+main{
+    margin-bottom: 20px;
+}
+footer{
+    margin-bottom: 20px;
 }
