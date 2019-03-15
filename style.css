@@ -1,67 +1,48 @@
 body{
-    margin: 0px;
     padding: 0px;
-}
-body{
-    font-family: consolas;
-    color: rgb(77, 235, 235);
-    background-color: #050505;
     margin: 80px 200px 0px;
-}
-
-/* .page-header{
-    border: 1px solid pink;
-} */
-.header-links{
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-}
-/* margins of the middle list items */
-.header-links li{
-    margin-right: 10px;
-}
-/* push the rest of the siblings to the end */
-.header-links li:nth-child(-n+1){
-    margin-right: auto;
-}
-/* remove the margin of the last element */
-.header-links li:last-child{
-    margin-right: 0px;
-}
-.header-links li a{
-    color: rgb(77, 235, 235);
-    text-decoration: none;
-}
-.header-links li a:hover{
-    background-color: rgb(77, 235, 235);
-    color: #050505;
-}
-.work-headers a{
-    text-decoration: none;
-    color: rgb(77, 235, 235);
-}
-.work-headers a:hover{
-    text-decoration: underline;
-}
-.sec-p{
-    color: rgb(58, 158, 158);
-    font-size: 14px;
-}
-.sec-header{
     background-color: #050505;
-    display: inline-block;
-    margin-bottom: 0px;
-    cursor: pointer;
-}
-.sec-header:hover{
-    text-decoration: underline;
-}
-main{
-    margin-bottom: 20px;
+    color: white;
+    font-family: 'Space Mono', monospace;
 }
 footer{
-    margin-bottom: 20px;
+    font-size: 13px;
+    margin: 20px 0px;
 }
+h1, h2, h3, p{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-size: 30px;
+    background-color: #fff;
+    color: #050505;
+    display: inline-block;
+    margin: 10px 0px 10px;
+}
+h2{font-size: 20px;}
+.header-links{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.header-links a{
+    color: white;
+    margin-right: 10px;
+}
+.header-links a:hover{
+    color: #050505;
+    background-color: white;
+}
+.sec-item{
+    margin: 15px 0px;
+}
+.sec-item-header a{
+    color: white;
+}
+.sec-item-header a:hover{
+    color: #050505;
+    background-color: white;
+}
+.sec-item-p{font-size: 13px;}
