@@ -16,7 +16,7 @@
         repoIndex.classList.add("repo-index");
 
         let repoUrl = document.createElement("a");
-        repoUrl.setAttribute("href", repo.url);
+        repoUrl.setAttribute("href", repo.html_url);
         repoUrl.innerText = repo.name.toLowerCase();
         repoUrl.classList.add("repo-url");
 
