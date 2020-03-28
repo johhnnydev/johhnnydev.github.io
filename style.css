@@ -5,9 +5,11 @@
 
 a {
   color: #111;
+  text-decoration: none;
 }
+
 a:hover {
-  font-style: bold;
+  text-decoration: underline;
 }
 
 ul {
@@ -19,9 +21,67 @@ body {
   width: 100vw;
   background-color: #fdfdfd;
   font-family: "Lora", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+li {
+  margin-bottom: 5px;
+}
+
+.repo {
+  width: 70vw;
+  margin-bottom: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr;
+      grid-template-columns: 20px 1fr;
+  -ms-grid-rows: (20px)[2];
+      grid-template-rows: repeat(2, 20px);
+  grid-column-gap: 10px;
+      grid-template-areas: "index name" "index description";
+}
+
+.repo-index {
+  font-size: 2rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: index;
+}
+
+.repo-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+  font-weight: bold;
+}
+
+.repo-description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: description;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tdu {
+  text-decoration: underline;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.tita {
+  font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */
