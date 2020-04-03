@@ -1,12 +1,9 @@
 (function() {
-  fetch("https://api.github.com/users/johhnnydev/repos", {
-    mode: "cors"
-  })
-    .then(res => res.json())
-    .then(res => {
+  fetch("./myrepos.json")
+    .then(response => response.json())
+    .then(json => {
       let index = 0;
-      res.forEach(repo => {
-        // console.log(repo.name, repo.url);
+      json.map(function(j) {
         let repoDiv = document.createElement("div");
         repoDiv.classList.add("repo");
 
@@ -16,12 +13,12 @@
         repoIndex.classList.add("repo-index");
 
         let repoUrl = document.createElement("a");
-        repoUrl.setAttribute("href", repo.html_url);
-        repoUrl.innerText = repo.name.toLowerCase();
+        repoUrl.setAttribute("href", j.html_url);
+        repoUrl.innerText = j.name.toLowerCase();
         repoUrl.classList.add("repo-url");
 
         let repoDescription = document.createElement("p");
-        repoDescription.innerText = repo.description;
+        repoDescription.innerText = j.description;
         repoDescription.classList.add("repo-description");
 
         repoDiv.appendChild(repoIndex);
