@@ -2,37 +2,31 @@
     {
         "name":  "GDance-App",
         "html_url":  "https://github.com/johhnnydev/GDance-App",
-        "description":  "This is the version 2 of the Guidance office web application that is built using Laravel (PHP).",
         "created_at":  "2019-01-01T05:38:51Z"
     },
     {
         "name":  "hackerrank-solutions",
         "html_url":  "https://github.com/johhnnydev/hackerrank-solutions",
-        "description":  "My solutions to HackerRank challenges. Some of it are my own solutions, some of it are modified version of the solution that I found on the discussion tab. I put comments on the codes so other beginners like me can understand it better.",
         "created_at":  "2018-04-15T11:03:04Z"
     },
     {
         "name":  "javascript-exercise-003",
         "html_url":  "https://github.com/johhnnydev/javascript-exercise-003",
-        "description":  "My solutions to the exercises.",
         "created_at":  "2018-09-09T14:59:01Z"
     },
     {
         "name":  "johhnnydev.github.io",
         "html_url":  "https://github.com/johhnnydev/johhnnydev.github.io",
-        "description":  "my personal website using github pages",
         "created_at":  "2019-03-14T13:26:59Z"
     },
     {
         "name":  "stuffs",
         "html_url":  "https://github.com/johhnnydev/stuffs",
-        "description":  "simple and minimal expense crud app",
         "created_at":  "2020-03-27T06:35:39Z"
     },
     {
         "name":  "YT-API-TEST",
         "html_url":  "https://github.com/johhnnydev/YT-API-TEST",
-        "description":  "Show youtube playlist list.",
         "created_at":  "2019-04-06T01:47:39Z"
     }
 ]

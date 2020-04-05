@@ -1,31 +1,38 @@
-(function() {
+(function () {
   fetch("./myrepos.json")
-    .then(response => response.json())
-    .then(json => {
-      let index = 0;
-      json.map(function(j) {
-        let repoDiv = document.createElement("div");
-        repoDiv.classList.add("repo");
+    .then((response) => response.json())
+    .then((json) => {
+      let sorted = json.sort(function (a, b) {
+        return (
+          new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+        );
+      });
+      sorted.map(function (j) {
+        let articleDiv = document.createElement("div");
+        articleDiv.classList.add("article");
 
-        let repoIndex = document.createElement("span");
-        repoIndex.innerText = index;
-        index++;
-        repoIndex.classList.add("repo-index");
+        let articleDate = document.createElement("p");
+
+        let monthOptions = { month: "long" };
+        let month = new Intl.DateTimeFormat("en-US", monthOptions).format(
+          new Date(j.created_at)
+        );
+        let yearOptions = { year: "numeric" };
+        let year = new Intl.DateTimeFormat("en-US", yearOptions).format(
+          new Date(j.created_at)
+        );
+
+        articleDate.innerText = year + "/" + month;
+        articleDate.classList.add("article-date");
 
         let repoUrl = document.createElement("a");
         repoUrl.setAttribute("href", j.html_url);
         repoUrl.innerText = j.name.toLowerCase();
-        repoUrl.classList.add("repo-url");
 
-        let repoDescription = document.createElement("p");
-        repoDescription.innerText = j.description;
-        repoDescription.classList.add("repo-description");
+        articleDiv.appendChild(articleDate);
+        articleDiv.appendChild(repoUrl);
 
-        repoDiv.appendChild(repoIndex);
-        repoDiv.appendChild(repoUrl);
-        repoDiv.appendChild(repoDescription);
-
-        document.querySelector("#repo-container").appendChild(repoDiv);
+        document.querySelector("#articles").appendChild(articleDiv);
       });
     });
 })();
