@@ -80,4 +80,10 @@ li {
     margin: 90px 70px;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .content {
+    margin: 90px 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
