@@ -27,6 +27,7 @@ li {
 
 .header {
   text-decoration: underline;
+  font-size: 1rem;
 }
 
 .sub-header {
@@ -49,10 +50,9 @@ li {
 }
 
 .article {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 20px;
 }
 
@@ -62,10 +62,22 @@ li {
 
 .article .article-date {
   font-weight: bold;
-  margin-right: 30px;
+  min-width: 170px;
 }
 
 .footer {
   color: #696969;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    margin: 90px 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 90px 70px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
