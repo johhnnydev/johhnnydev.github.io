@@ -45,6 +45,11 @@ li {
     font-weight: bold;
     min-width: 170px;
   }
+  a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .footer {
   color: #696969;

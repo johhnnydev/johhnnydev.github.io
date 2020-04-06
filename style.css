@@ -65,6 +65,12 @@ li {
   min-width: 170px;
 }
 
+.article a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .footer {
   color: #696969;
 }
